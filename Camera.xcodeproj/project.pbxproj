@@ -15,6 +15,8 @@
 		F57F844420786C5000DAFDA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F57F844320786C5000DAFDA5 /* main.m */; };
 		F57F844E20786C5000DAFDA5 /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F57F844D20786C5000DAFDA5 /* CameraTests.m */; };
 		F57F845920786C5000DAFDA5 /* CameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F57F845820786C5000DAFDA5 /* CameraUITests.m */; };
+		F57F8469207876F000DAFDA5 /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = F57F8466207876EF00DAFDA5 /* ZYQAssetPicker.Bundle */; };
+		F57F846A207876F000DAFDA5 /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57F8467207876EF00DAFDA5 /* ZYQAssetPickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		F57F845420786C5000DAFDA5 /* CameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57F845820786C5000DAFDA5 /* CameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraUITests.m; sourceTree = "<group>"; };
 		F57F845A20786C5000DAFDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57F8466207876EF00DAFDA5 /* ZYQAssetPicker.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYQAssetPicker.Bundle; sourceTree = "<group>"; };
+		F57F8467207876EF00DAFDA5 /* ZYQAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQAssetPickerController.m; sourceTree = "<group>"; };
+		F57F8468207876F000DAFDA5 /* ZYQAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQAssetPickerController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,9 @@
 		F57F843320786C5000DAFDA5 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				F57F8466207876EF00DAFDA5 /* ZYQAssetPicker.Bundle */,
+				F57F8468207876F000DAFDA5 /* ZYQAssetPickerController.h */,
+				F57F8467207876EF00DAFDA5 /* ZYQAssetPickerController.m */,
 				F57F843420786C5000DAFDA5 /* AppDelegate.h */,
 				F57F843520786C5000DAFDA5 /* AppDelegate.m */,
 				F57F843720786C5000DAFDA5 /* ViewController.h */,
@@ -241,6 +249,7 @@
 				F57F844120786C5000DAFDA5 /* LaunchScreen.storyboard in Resources */,
 				F57F843E20786C5000DAFDA5 /* Assets.xcassets in Resources */,
 				F57F843C20786C5000DAFDA5 /* Main.storyboard in Resources */,
+				F57F8469207876F000DAFDA5 /* ZYQAssetPicker.Bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +277,7 @@
 				F57F843920786C5000DAFDA5 /* ViewController.m in Sources */,
 				F57F844420786C5000DAFDA5 /* main.m in Sources */,
 				F57F843620786C5000DAFDA5 /* AppDelegate.m in Sources */,
+				F57F846A207876F000DAFDA5 /* ZYQAssetPickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +441,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKW9JN2NK9;
 				INFOPLIST_FILE = Camera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syp.Camera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKW9JN2NK9;
 				INFOPLIST_FILE = Camera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syp.Camera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
